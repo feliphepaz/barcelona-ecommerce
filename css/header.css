@@ -1,0 +1,31 @@
+.logo {
+  width: 120px;
+}
+
+.header {
+  border-bottom: 5px solid var(--secundary);
+  padding: 10px 0;
+  margin-bottom: 60px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conta a {
+  text-decoration: none;
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 20px;
+}
+
+.conta a:last-child {
+  margin-right: 0px;
+}
+
+.conta a:hover {
+  text-decoration: underline;
+}

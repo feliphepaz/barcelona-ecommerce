@@ -7,3 +7,7 @@ Description: Tema desenvolvido para a loja virtual do Barcelona de Ilhéus.
 Version: 1.0
 */
 
+@import url("css/reset.css");
+@import url("css/geral.css");
+@import url("css/header.css");
+@import url("css/main.css");

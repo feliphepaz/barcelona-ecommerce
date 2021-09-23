@@ -1,0 +1,81 @@
+#slide-banner {
+  position: relative;
+  width: 100%;
+  height: 40vw;
+  margin-top: -60px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  display: none;
+}
+
+.banner.selected {
+  display: block;
+  animation: transitSlide 0.2s forwards;
+}
+
+@keyframes transitSlide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btn-slide-banner {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  box-shadow: 2px 2px rgba(0, 0, 0, 1);
+  outline: none;
+  cursor: pointer;
+  z-index: 5000;
+  top: 50px;
+  margin-bottom: 20px;
+}
+
+.btn-slide-banner.active {
+  box-shadow: 2px 2px rgba(0, 0, 0, 1);
+  background: #31ebe8;
+  width: 60px;
+}
+
+.categorias {
+  margin-top: 0px;
+  width: 100% !important;
+  height: 400px;
+  display: flex;
+}
+
+.masculino, .feminino {
+  width: 50%;
+  background: var(--secundary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+}
+
+.feminino {
+  background: var(--tertiary);
+}
+
+.categorias a h2 {
+  color: var(--primary);
+  font-size: var(--font32);
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+
