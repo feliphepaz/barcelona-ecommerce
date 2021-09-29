@@ -24,4 +24,42 @@ get_header();
   </a>
 </div>
 
+<?php
+
+$products_detach = wc_get_products([
+  'limit' => 2,
+  'category' => ['destaque'],
+]);
+
+$products_new = wc_get_products([
+  'limit' => 9,
+  'orderby' => 'date',
+  'order' => 'DESC',
+]);
+
+$products_sales = wc_get_products([
+  'limit' => 6,
+  'meta_key' => 'total_sales',
+  'orderby' => 'meta_value_num',
+  'order' => 'DESC',
+]);
+
+$data['destaques'] = format_products($products_detach, 'medium');
+$data['lançamentos'] = format_products($products_new, 'medium');
+$data['vendidos'] = format_products($products_sales, 'medium');
+
+?>
+
+<?php if(have_posts()) { while (have_posts()) {the_post(); ?>
+
+
+<section class='lancamentos'>
+  <div class="container">
+    <h1 class="subtitulo">Lançamentos</h1>
+    <?= barcelona_products_list($data['destaques']); ?>
+  </div>
+</section>
+
+<?php } } ?>
+
 <?php get_footer() ?>

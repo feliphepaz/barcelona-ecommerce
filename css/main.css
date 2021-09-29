@@ -79,3 +79,35 @@
   letter-spacing: 20px;
 }
 
+.lancamentos {
+  padding: 120px 0;
+}
+
+.lancamentos .container {
+  flex-direction: column;
+}
+
+.products-list {
+  display: flex;
+  background: blue;
+  justify-content: space-between;
+}
+
+.products-list li {
+  width: 600px;
+}
+
+.products-list li:first-child {
+  position: relative;
+  top: -50px;
+}
+
+.products-list li:last-child {
+  position: relative;
+  top: 50px;
+}
+
+.products-list li a img {
+  width: 600px;
+}
+
