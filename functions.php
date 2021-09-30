@@ -46,7 +46,7 @@ function barcelona_products_list($products) { ?>
       <a href="<?= $product['link'] ?>">
         <div class="product-info">
           <img src="<?= $product['img'] ?>" alt="<?= $product['name'] ?>">
-          <h2><?= $product['name'] ?> <br>| <?= $product['price'] ?></h2>
+          <h2><?= $product['name'] ?> <br> <?= $product['price'] ?></h2>
         </div>
       </a>
     </li>
