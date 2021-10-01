@@ -53,10 +53,17 @@ $data['vendidos'] = format_products($products_sales, 'medium');
 <?php if(have_posts()) { while (have_posts()) {the_post(); ?>
 
 
-<section class='lancamentos'>
+<section class='destaques'>
   <div class="container">
     <h1 class="subtitulo">Lançamentos</h1>
     <?= barcelona_products_list($data['destaques']); ?>
+  </div>
+</section>
+
+<section class='produtos'>
+  <div class="container">
+    <h1 class="subtitulo">Lançamentos</h1>
+    <?= barcelona_products_list($data['lançamentos']); ?>
   </div>
 </section>
 
