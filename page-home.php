@@ -15,15 +15,6 @@ get_header();
   <?php } } ?>
 </ul>
 
-<div class='categorias'>
-  <a class="masculino" href="">
-    <h2>Masculino</h2>
-  </a>
-  <a class="feminino" href="">
-    <h2>Feminino</h2>
-  </a>
-</div>
-
 <?php
 
 $products_detach = wc_get_products([
@@ -38,7 +29,7 @@ $products_new = wc_get_products([
 ]);
 
 $products_sales = wc_get_products([
-  'limit' => 6,
+  'limit' => 3,
   'meta_key' => 'total_sales',
   'orderby' => 'meta_value_num',
   'order' => 'DESC',
@@ -55,15 +46,30 @@ $data['vendidos'] = format_products($products_sales, 'medium');
 
 <section class='destaques'>
   <div class="container">
-    <h1 class="subtitulo">Lançamentos</h1>
     <?= barcelona_products_list($data['destaques']); ?>
   </div>
 </section>
 
-<section class='produtos'>
+<section class='produtos lancamentos'>
   <div class="container">
     <h1 class="subtitulo">Lançamentos</h1>
     <?= barcelona_products_list($data['lançamentos']); ?>
+  </div>
+</section>
+
+<div class='categorias'>
+  <a class="masculino" href="">
+    <h2>Masculino</h2>
+  </a>
+  <a class="feminino" href="">
+    <h2>Feminino</h2>
+  </a>
+</div>
+
+<section class='produtos mais-vendidos'>
+  <div class="container">
+    <h1 class="subtitulo">Mais Vendidos</h1>
+    <?= barcelona_products_list($data['vendidos']); ?>
   </div>
 </section>
 
