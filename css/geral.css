@@ -34,6 +34,7 @@ body {
   background: var(--base1);
   font-family: var(--montserrat);
   font-size: var(--font14);
+  text-transform: uppercase;
 }
 
 .hidden {
@@ -57,7 +58,6 @@ body {
   font-weight: var(--bold);
   font-size: var(--font14);
   font-family: var(--montserrat);
-  text-transform: uppercase;
   letter-spacing: 2px;
 }
 
@@ -71,7 +71,6 @@ body {
   background: var(--primary);
   box-shadow: 0px 0px 0px 2px var(--secundary);
   font-weight: var(--bold);
-  text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
   margin-left: 10px;

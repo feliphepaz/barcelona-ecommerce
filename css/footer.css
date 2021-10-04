@@ -1,3 +1,148 @@
 .footer {
     background: var(--primary);
+    padding: 60px;
 }
+
+.copyright {
+    background: var(--primaryBold);
+}
+
+.copyright .container {
+    flex-direction: column;
+    padding: 40px;
+}
+
+.copyright .logo {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.copy {
+    color: var(--base1);
+    font-size: var(--font9);
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer .container {
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-contact {
+    margin-top: 20px;
+    width: 100% !important;
+}
+
+.footer-contact a, .institucional {
+    color: var(--base1);
+    text-transform: none;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0px;
+    font-weight: var(--bold);
+    width: 100%;
+}
+
+.institucional {
+    margin-top: 20px;
+    padding: 0px;
+    padding-top: 10px;
+}
+
+.footer-contact a:last-child {
+    margin-bottom: 0px;
+}
+
+.footer-content div {
+    color: var(--base1);
+    margin-right: 100px;
+    width: 30%;
+}
+
+.footer-content div:last-child {
+    margin-right: 0px;
+}
+
+.footer-content div:last-child ul {
+    display: flex;
+}
+
+.footer-content div:last-child ul li {
+    margin-right: 10px;
+}
+
+.footer-content div ul li {
+    margin-top: 20px;
+}
+
+.footer-content div ul li a {
+    text-decoration: none;
+    text-transform: none;
+    color: var(--base1);
+    font-size: var(--font9);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-content div ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-content nav {
+    display: flex;
+}
+
+.footer-content nav ul {
+    margin-right: 60px;
+}
+
+.footer-content nav ul:last-child {
+    margin-right: 0px;
+}
+
+.footer-content div h3 {
+    background: var(--secundary);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.newsletter {
+    margin-top: 20px;
+    background: var(--secundary);
+    padding: 40px;
+    font-size: var(--font32);
+    color: var(--base1);
+    text-transform: none;
+    font-weight: var(--bold);
+}
+
+.newsletter p {
+    max-width: 700px;
+}
+
+.newsletter input {
+    box-shadow: 0px 0px 0px 2px var(--primary);
+}
+
+.newsletter form {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.newsletter .input-busca {
+    width: 100%;
+}
+
+
+
+
+
+
