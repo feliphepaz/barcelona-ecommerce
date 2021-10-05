@@ -8,8 +8,8 @@ $style = get_stylesheet_directory_uri();
     <div class='container'>
         <p>Assine nossa Newsletter e receba 10% de desconto no seu primeiro pedido!</p>
         <form action="">
-            <input type="text" class='input-busca'>
-            <input type="submit" class='input-submit'>
+            <input type="text" placeholder='e-mail' class='input-busca'>
+            <input type="submit" value='assinar' class='input-submit'>
         </form>
     </div>
 </section>
@@ -73,5 +73,6 @@ $style = get_stylesheet_directory_uri();
 </section>
 
 <script src="<?= get_stylesheet_directory_uri(); ?>/js/slide-banner.js"></script>
+<script src="<?= get_stylesheet_directory_uri(); ?>/js/galeria.js"></script>
 </body>
 </html>

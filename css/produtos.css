@@ -1,0 +1,115 @@
+.produtos-loja {
+    width: 80%;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    font-weight: var(--bold);
+    color: var(--primary);
+    font-size: var(--font9);
+    letter-spacing: 2px;
+}
+
+.breadcrumb a {
+    color: var(--secundary);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.filtros {
+    width: 20%;
+    margin-right: 60px;
+    align-self: flex-start;
+}
+
+.filtro {
+    margin-bottom: 60px;
+}
+
+.filtro .count {
+    display: none;
+}
+
+.filtro h2 {
+    margin-bottom: 20px;
+}
+
+.woocommerce-widget-layered-nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.woocommerce-widget-layered-nav-list__item a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 60px;
+    text-decoration: none;
+    font-weight: var(--bold);
+    color: var(--primary);
+}
+  
+.woocommerce-widget-layered-nav-list__item:last-child a {
+    margin-bottom: 0px;
+}
+  
+.woocommerce-widget-layered-nav-list__item a::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--base1);
+    background: var(--primary);
+    box-shadow: 0px 0px 0px 2px var(--secundary);
+    margin-right: 10px;
+}
+  
+
+.woocommerce-widget-layered-nav-list__item--chosen a::before {
+    background: #f699e9;
+}
+
+.filtro:last-child {
+    margin-bottom: 0px;
+}
+
+.filtrar-preco .input-busca {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.filtrar-preco div label {
+    display: block;
+    font-weight: var(--bold);
+    color: var(--primary);
+}
+
+.filtrar-preco .input-submit {
+    margin-left: 0px;
+}
+
+.filtro-categorias li a {
+    text-decoration: none;
+    font-weight: var(--bold);
+    color: var(--primary);
+}
+
+.filtro-categorias li a:hover {
+    text-decoration: underline;
+}
+
+.filtro-categorias li + li {
+    margin-top: 20px;
+}
+
+.woocommerce-ordering .orderby {
+    color: var(--primary);
+    padding: 2px 0px;
+    border: 2px solid var(--primary);
+    outline: none;
+    margin-bottom: 20px;
+}

@@ -27,8 +27,8 @@ $style = get_stylesheet_directory_uri();
         </form>
       </div>
       <nav class='conta'>
-        <a href="/minha-conta" class='minha-conta'>Minha Conta</a>
-        <a href="/carrinho" class='carrinho'>Carrinho</a>
+        <a href="barcelona-ecommerce/minha-conta" class='minha-conta'>Minha Conta</a>
+        <a href="barcelona-ecommerce/carrinho" class='carrinho'>Carrinho</a>
         <?php if($cart_count) { ?>
           <span class='carrinho-count'><?= $cart_count; ?></span>
         <?php } ?>

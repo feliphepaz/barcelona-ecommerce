@@ -106,10 +106,13 @@
     margin-right: 0px;
 }
 
-.footer-content div h3 {
-    background: var(--secundary);
+.footer-content div h3, .filtro h2, .cart_totals h2, .woocommerce-additional-fields h3, .woocommerce-billing-fields h3, #order_review_heading {
+    font-size: var(--font14) !important;
+    background: var(--secundary) !important;
+    border-radius: 0px !important;
     padding: 10px 20px;
-    font-weight: bold;
+    font-weight: var(--bold) !important;
+    color: var(--base1);
 }
 
 .newsletter {
