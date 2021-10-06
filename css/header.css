@@ -28,3 +28,11 @@
 .conta a:hover {
   text-decoration: underline;
 }
+
+.carrinho-count {
+  display: inline-block;
+  color: var(--base1);
+  background: var(--secundary);
+  padding: 5px 8px;
+  text-align: center;
+}

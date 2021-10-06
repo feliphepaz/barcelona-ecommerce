@@ -52,9 +52,10 @@
     margin-bottom: 20px;
 }
 
-.product-detail small {
+.product-detail small, .woocommerce-Price-amount {
     display: block;
     color: rgba(0,0,0,.5);
+    font-weight: var(--regular);
     font-size: var(--font9);
     letter-spacing: 2px;
     text-transform: uppercase;

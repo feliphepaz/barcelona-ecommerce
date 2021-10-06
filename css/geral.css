@@ -3,7 +3,10 @@
 }
 
 .woocommerce-Price-amount {
-  font-weight: var(--bold);
+  margin-top: 5px;
+  font-size: var(--font9);
+  font-weight: var(--bold) !important;
+  color: var(--base2) !important;
 }
 
 .container {

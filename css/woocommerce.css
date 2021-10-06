@@ -21,7 +21,7 @@
 
   .woocommerce-message a,
   .woocommerce-info a,
-  .woocommerce-error a {
+  .woocommerce-error a, .woocommerce-MyAccount-content .woocommerce-message .woocommerce-MyAccount-content a {
     font-weight: var(--bold);
     font-size: var(--font14) !important;
     text-transform: uppercase;
@@ -29,17 +29,17 @@
     border-radius: 0px !important;
     letter-spacing: 2px;
     text-decoration: none;
-    background: var(--secundary);
-    padding: 10px;
+    background-color: var(--secundary) !important;
+    padding: 10px !important;
     order: 2;
-    margin-left: 20px;
+    margin-left: 20px !important;
   }
 
   .woocommerce-message a:hover,
   .woocommerce-info a:hover,
   .woocommerce-error a:hover {
-    background: var(--secundaryBold);
-    transition: var(--defaultT);
+    background: var(--secundaryBold) !important;
+    transition: var(--defaultT) !important;
   }
   
   .woocommerce-message::before,
@@ -48,13 +48,11 @@
     display: none !important;
   } 
   
-  .woocommerce-error {
-    border-left: 4px solid orangered;
-  }
-  
   .woocommerce-message,
-  .woocommerce-info {
-    border-left: 4px solid olivedrab;
+  .woocommerce-info,
+  .woocommerce-error {
+    border-top: 4px solid var(--primaryLight) !important;
+    border-left: 4px solid var(--primaryBold) !important;
   }
   
   /* Formulários */
@@ -103,6 +101,10 @@
   .woocommerce-cart a.button.alt {
     background: var(--secundary) !important;
     padding: 20px !important;
+  }
+
+  .woocommerce-cart .woocommerce-Price-amount , .woocommerce-checkout .woocommerce-Price-amount {
+    font-size: var(--font14);
   }
   
   /* Carrinho */
@@ -203,6 +205,14 @@
     color: var(--secundary);
   }
 
+  .woocommerce .product-remove a.remove {
+    color:var(--secundary) !important;
+  }
+
+  .woocommerce a.remove:hover {
+    background: var(--secundary) !important;
+  }
+
   .woocommerce-privacy-policy-text {
     margin-top: 20px !important;
   }
@@ -274,10 +284,6 @@
   color: var(--base1) !important;
 }
 
-.woocommerce-MyAccount-content a {
-  color: var(--base1) !important;
-}
-
 .woocommerce-account h2 {
   font-size: 1.25rem;
   margin: 10px 0;
@@ -313,11 +319,12 @@
 }
 
 .woocommerce-MyAccount-navigation a {
-  color: #fff;
+  color: var(--base1);
   text-decoration: none;
   display: block;
   padding: 10px;
-  border-bottom: 2px solid rgba(255,255,255,.08);
+  border-bottom: 2px solid var(--primaryLight);
+  font-weight: var(--bold);
 }
 
 .woocommerce-MyAccount-navigation a:hover,
@@ -326,7 +333,24 @@
 }
 
 .woocommerce-MyAccount-content p {
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+}
+
+.woocommerce-MyAccount-content p:nth-child(2) {
+  font-size: var(--font18) !important;
+  font-weight: var(--bold);
+}
+
+.woocommerce-MyAccount-content p:nth-child(2) a {
+  color: var(--base1);
+}
+
+.woocommerce-MyAccount-content p:nth-child(3) a {
+  color: var(--base1);
+}
+
+.woocommerce-MyAccount-content p:nth-child(3) {
+  font-weight: var(--bold);
 }
 
 .woocommerce-MyAccount-content button {

@@ -3,6 +3,7 @@
 
 <?php
 $style = get_stylesheet_directory_uri();
+$cart_count = WC()->cart->get_cart_contents_count();
 ?>
 
 <head>
@@ -28,10 +29,11 @@ $style = get_stylesheet_directory_uri();
       </div>
       <nav class='conta'>
         <a href="barcelona-ecommerce/minha-conta" class='minha-conta'>Minha Conta</a>
-        <a href="barcelona-ecommerce/carrinho" class='carrinho'>Carrinho</a>
-        <?php if($cart_count) { ?>
-          <span class='carrinho-count'><?= $cart_count; ?></span>
-        <?php } ?>
+        <a href="barcelona-ecommerce/carrinho" class='carrinho'>Carrinho
+          <?php if($cart_count) { ?>
+            <span class="carrinho-count"><?= $cart_count; ?></span>
+          <?php } ?>
+        </a>
       </nav>
     </div>
   </header>
