@@ -67,11 +67,11 @@
 }
 
 .menu-header {
-  display: none;
+  display: block;
 }
 
 .menu-header.active-mob {
-  display: block;
+  display: block !important;
   animation: showMobile var(--defaultT) forwards;
 }
 

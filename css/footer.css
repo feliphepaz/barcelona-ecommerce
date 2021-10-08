@@ -106,7 +106,7 @@
     margin-right: 0px;
 }
 
-.footer-content div h3, .filtro h2, .cart_totals h2, .woocommerce-additional-fields h3, .woocommerce-billing-fields h3, #order_review_heading {
+.footer-content div h3, .filtro h2, .cart_totals h2, .woocommerce-additional-fields h3, .woocommerce-billing-fields h3, #order_review_heading, .woocommerce-account h2 {
     font-size: var(--font14) !important;
     background: var(--secundary) !important;
     border-radius: 0px !important;

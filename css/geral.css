@@ -152,6 +152,10 @@ body {
     margin-left: 0px !important;
   }
 
+  .menu-header {
+    display: none !important;
+  }
+
   .newsletter p {
     margin-bottom: 20px;
   }
