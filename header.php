@@ -34,6 +34,18 @@ $cart_count = WC()->cart->get_cart_contents_count();
             <span class="carrinho-count"><?= $cart_count; ?></span>
           <?php } ?>
         </a>
+        <a class='conta-categorias-btn' href="">☰</a>
       </nav>
     </div>
+    <nav class='menu-header'>
+      <ul class='container'>
+        <li><a href="">Camisas Masculinas</a></li>
+        <li><a href="">Camisas Femininas</a></li>
+        <li><a href="">Acessórios</a></li>
+        <li><a href="">Jaquetas</a></li>
+        <li><a href="">Conjuntos</a></li>
+        <li><a href="">Infantil</a></li>
+        <li><a href="">Outlet</a></li>
+      </ul>
+    </nav>
   </header>

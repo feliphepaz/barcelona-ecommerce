@@ -74,5 +74,7 @@ $style = get_stylesheet_directory_uri();
 
 <script src="<?= get_stylesheet_directory_uri(); ?>/js/slide-banner.js"></script>
 <script src="<?= get_stylesheet_directory_uri(); ?>/js/galeria.js"></script>
+<script src="<?= get_stylesheet_directory_uri(); ?>/js/filtro.js"></script>
+<script src="<?= get_stylesheet_directory_uri(); ?>/js/menu-mobile.js"></script>
 </body>
 </html>

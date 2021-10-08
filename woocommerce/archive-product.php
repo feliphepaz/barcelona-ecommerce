@@ -16,6 +16,7 @@ $data['products'] = format_products($products);
 
 <article class="container products-archive">
   <nav class="filtros">
+    <button class="btn-filtrar">Filtrar produtos <span data-rotate>▼</span></button>
     <div data-filtro>
       <div class="filtro">
         <h2>Categorias</h2>

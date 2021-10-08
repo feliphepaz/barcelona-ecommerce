@@ -113,3 +113,19 @@
     outline: none;
     margin-bottom: 20px;
 }
+
+.btn-filtrar {
+    width: 100%;
+    text-transform: uppercase;
+    background: var(--primary);
+    outline: none;
+    padding: 10px;
+    color: var(--base1);
+    font-family: var(--montserrat);
+    letter-spacing: 2px;
+    border: 2px solid var(--base1);
+    box-shadow: 0px 0px 0px 2px var(--secundary);
+    cursor: pointer;
+    outline: none;
+    display: none;
+  }
